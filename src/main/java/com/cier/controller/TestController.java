@@ -18,4 +18,10 @@ public class TestController {
     public String baseType(@RequestParam("xage") int age){
         return "age:"+age;
     }
+
+    @RequestMapping(value = "baseType2.do")
+    @ResponseBody
+    public String baseType2(Integer age){
+        return "age:"+age;
+    }
 }
