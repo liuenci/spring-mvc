@@ -19,9 +19,24 @@ public class TestController {
         return "age:"+age;
     }
 
+    /**
+     * 包装类型可以为空
+     * @param age
+     * @return
+     */
     @RequestMapping(value = "baseType2.do")
     @ResponseBody
     public String baseType2(Integer age){
         return "age:"+age;
+    }
+
+    @RequestMapping(value = "array.do")
+    @ResponseBody
+    public String array(String[] name){
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String item : name){
+            stringBuilder.append(item).append(" ");
+        }
+        return stringBuilder.toString();
     }
 }
