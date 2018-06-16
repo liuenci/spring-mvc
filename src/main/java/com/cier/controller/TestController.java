@@ -1,5 +1,6 @@
 package com.cier.controller;
 
+import com.cier.pojo.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -30,6 +31,11 @@ public class TestController {
         return "age:"+age;
     }
 
+    /**
+     * 数组绑定
+     * @param name
+     * @return
+     */
     @RequestMapping(value = "array.do")
     @ResponseBody
     public String array(String[] name){
@@ -39,4 +45,16 @@ public class TestController {
         }
         return stringBuilder.toString();
     }
+
+    /**
+     * 对象绑定
+     * @param user
+     * @return
+     */
+    @RequestMapping(value = "object.do")
+    @ResponseBody
+    public String object(User user){
+        return user.toString();
+    }
+
 }

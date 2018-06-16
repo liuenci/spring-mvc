@@ -22,6 +22,7 @@
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.9" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.9" />
           <element id="library" level="project" name="Maven: org.springframework:spring-oxm:4.0.0.RELEASE" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
